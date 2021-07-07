@@ -2,12 +2,12 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.title}
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) (https://github.com/${data.username}/${data.Title})
+  # ${data.Title}
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) (https://github.com/${data.Username}/${data.Title})
   
   #Description
 
-  ${data.description}
+  ${data.Description}
     
     # Table of Contents
 
@@ -24,28 +24,28 @@ function generateMarkdown(data) {
     * [Questions](#questions)
     
     # Installation
-    The following necessary dependcies must be installed to run the application properly: ${data.installations}
+    The following necessary dependcies must be installed to run the application properly: ${data.Installation}
 
     # Usage
 
-    ${data.usage}
+    ${data.Usage}
 
     #License
 
     
     
-    This application is covered by the ${data.license} license
+    This application is covered by the ${data.License} license
     
     # Contributing
 
-    Contributors: ${data.contribute}
+    Contributors: ${data.Contribute}
 
     # Tests
 
-    To run tests, run the following command: ${data.tests}
+    To run tests, run the following command: ${data.Tests}
     
     # Questions
-    If you have any questions about the repo, open an issue or contact me directly at ${data.email}. You can find more of my work at (https://github.com/${data.username}/).`
+    If you have any questions about the repo, open an issue or contact me directly at ${data.Email}. You can find more of my work at (https://github.com/${data.Username}/).`
 }
 
 module.exports = generateMarkdown;

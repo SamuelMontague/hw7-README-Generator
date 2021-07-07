@@ -11,17 +11,12 @@ const questions = [
         {
         type: "input",
         message: "what is the title of the project?",
-        name: "title"
+        name: "Title"
     },
     {
         type: "input",
         message: "What is the project about? Give a detailed description!",
         name: "Description"
-    },
-    {   
-        type: "input",
-        message: "Table of Contents",
-        name: "Table of Contents"   
     },
     {
         type: "input",
@@ -37,33 +32,33 @@ const questions = [
     {
         type: "input",
         message: "What command should be run to install dependencies?",
-        name: "installations",
-        default: "npm i"
+        name: "Installation",
+        
     },
     {
         type: "input",
         message: "Who is contributing to the project?",
-        name: "contribute"
+        name: "Contribute"
     },
     {
         type: "input",
         message: "What commands are needed to test this app?",
-        name: "tests"
+        name: "Tests"
     },
     {
         type: "input",
         message: "Contact info for questions.",
-        name: "questions"
+        name: "Questions"
     },
     {
         type: "input",
         message: "What is your Github username?",
-        name: "username"
+        name: "Username"
     },
     {
         type: "input",
         message: "What is your email?",
-        name:"email"
+        name:"Email"
     }
 ];
 
