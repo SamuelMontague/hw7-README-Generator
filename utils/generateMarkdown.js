@@ -2,50 +2,51 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
-  # ${data.Title}
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) (https://github.com/${data.Username}/${data.Title})
+# ${data.Title}
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/${data.Username}/${data.Title})
   
-  #Description
+#Description
 
-  ${data.Description}
+${data.Description}
     
-    # Table of Contents
+# Table of Contents
 
-    * [Installation](#installation)
+* [Installation](#installation)
     
-    * [Usage](#usage)
+* [Usage](#usage)
 
-    * [License](#license)
+* [License](#license)
 
-    * [Contributing](#contributing)
+* [Contributing](#contributing)
 
-    * [Tests](#tests)
+* [Tests](#tests)
 
-    * [Questions](#questions)
+* [Questions](#questions)
     
-    # Installation
+# Installation
     The following necessary dependcies must be installed to run the application properly: ${data.Installation}
 
-    # Usage
+# Usage
 
-    ${data.Usage}
+This application is used for ${data.Usage}
 
-    #License
+#License
 
+This application is covered by the ${data.License} license.
     
-    
-    This application is covered by the ${data.License} license
-    
-    # Contributing
+# Contributing
 
-    Contributors: ${data.Contribute}
+Contributors: ${data.Contribute}
 
-    # Tests
+# Tests
 
-    To run tests, run the following command: ${data.Tests}
+To run tests, run the following command: ${data.Tests}
     
-    # Questions
-    If you have any questions about the repo, open an issue or contact me directly at ${data.Email}. You can find more of my work at (https://github.com/${data.Username}/).`
+# Questions
+
+If you have any questions about the repo, open an issue or contact me directly at ${data.Email}. You can find more of my work at (https://github.com/${data.Username}/).
+
+`
 }
 
 module.exports = generateMarkdown;
